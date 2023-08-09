@@ -1,0 +1,22 @@
+ * {
+   margin: 0;
+   padding: 0;
+}
+
+.colorfondoarriba {
+    background-color: #e9c925;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.item li a{
+color:#000;
+text-decoration: none;
+}
+
+.fondogris {
+    color:#666;
+}
