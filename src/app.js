@@ -3,7 +3,7 @@ const app = express()
 
 const path = require("path");
 
-app.listen(3001, ()=> console.log("servidor escuchando en el puerto 3001"))
+app.listen(port, ()=> console.log("servidor escuchando en el puerto 3001"))
 
 app.use(express.static("public"));
 
