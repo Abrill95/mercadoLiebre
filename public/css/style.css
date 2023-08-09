@@ -4,7 +4,7 @@
     --azul: #03264C;
     --celeste: #1259c3;
     --gris-oscuro: #666;
-    
+
     --gris-claro: #ebebeb;
     --verde: #39b54a;
 }
@@ -100,13 +100,13 @@ nav {
     width: 100%;
 }
 
-.menuHamburguesa a {
+.menuHamburguesa {
     text-align: center;
     padding: 1em;
     font-size: 20px;
 }
 
-.menuHamburguesa a {
+.menuHamburguesa {
     background-color: var(--celeste);
     color: white;
     padding: 6px; 
