@@ -1,230 +1,416 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  :root {
-    --amarillo: #eac926;
-    --azul: #03264c;
+:root{
+    --amarrillo:  #EAC926;
+
+    --azul: #03264C;
     --celeste: #1259c3;
-    --gris1: #666;
-    --gris2: #ebebeb;
+    --gris-oscuro: #666;
+    
+    --gris-claro: #ebebeb;
     --verde: #39b54a;
-  }
-  
-  nav {
-    background-color: var(--amarillo);
-    padding: 15px;
-  }
-  
-  .top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 45%;
-  }
-  .top form {
-    margin: 10px;
-    position: relative;
-    width: 45%;
-  }
-  .top input {
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
-  }
-  
-  .top form button {
-    position: absolute;
-    right: 5px;
-    top: 10px;
-    border: none;
-    background-color: #fff;
-  }
-  
-  nav li {
-    list-style: none;
-  }
-  nav a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .fa-bars {
-    color: #fff;
-    font-size: 32px;
-    background-color: var(--celeste);
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .hamburguesa {
-    text-align: center;
-    padding: 15px 0;
-  }
-  .medium {
-    width: 100%;
-    text-align: center;
-    padding: 5px;
-  }
-  .banner {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner img {
-    width: 100%;
-  }
-  main {
-    background-color: var(--gris2);
-  }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .detalle {
-    border-top: 1px solid var(--gris2);
-    padding: 15px 15px;
-    display: flex;
-  }
-  .titulo {
-    font-size: 24px;
-  }
-  .precios {
-    font-size: 18px;
-    width: 30%;
-  }
-  .descuentos,
-  .descripciones {
-    font-size: 16px;
-  }
-  
-  .descuentos {
-    color: var(--verde);
-    width: 70%;
-  }
-  .descripciones {
-    color: #666;
-  }
-  .camion {
-    position: relative;
-  }
-  
-  .fa-truck {
-    color: var(--verde);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.camion-icon{
     display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
     height: 30px;
     border: 1px solid #39b54a;
-    background-color: #fff;
+    background-color: #FFF;
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    top: -15px;
-  }
-  
-  .card {
-    border: 1px solid #b1b1b1;
-    margin: 10px;
-    background-color: #fff;
-    width: 80%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    text-align: center;
-  }
-  .card img {
-    width: 90%;
-    padding: 15px;
-  }
-  .icon {
-    color: var(--celeste);
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  .articulo-pie {
-    text-align: center;
-    color: #666;
-    padding: 15px 40px;
-  }
-  .articulo-pie p {
+    top: -28px;
+    color: var(--verde);
+    transition: all 450ms;
+}
+
+.camion-icon:hover {
+    transform: rotate(-90deg);
+}
+
+.product-delivery-icon {
+    position: relative;
+}
+
+main section div div {
+    padding: 0;
+}
+
+.image-content{
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #c7c5c5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
-  }
-  
-  .articulo-pie h3 {
-    font-size: 14px;
-  }
-  .bottom {
+}
+
+nav {
+    background-color: var(--amarrillo);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.logo {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    padding: 1em;
+    width: 50%;
+}
+
+.logo form {
+    width: 45%;
+    position: relative;
+}
+
+.logo > form > input{
+    width: 100%;
+}
+
+.logo > form > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.logo p {
+    width: 100%;
+}
+
+.menuHamburguesa a {
+    text-align: center;
+    padding: 1em;
+    font-size: 20px;
+}
+
+.menuHamburguesa a {
+    background-color: var(--celeste);
+    color: white;
+    padding: 6px; 
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5px; 
+}
+
+.menu-opciones {
     display: none;
-  }
-  
-  .descripciones {
-    padding-bottom: 15px;
-  }
-  
-  .formulario {
+}
+
+.item {
+    padding-top: 1em;
+    width: 50%;
+    padding-left: 25px;
+}
+
+.item li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+}
+
+.item li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.item2 {
+    padding-top: 1em;
+    padding-right: 25px;
+    width: 50%;
+    text-align: right;
+}
+
+.item2 li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+}
+
+.item2 li a {
+    color: #000;
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    background-color: var(--gris-claro);
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+main section {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section div {
+    background-color: white;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.titulares {
+    font-size: 24px;
+    color: var(--gris-oscuro);
+    text-align: left;
+    padding: 15px 0 0 55px;
+}
+
+.precios {
+    font-size: 18px;
+    width: 40%;
+}
+
+.descuentos-descripcion {
+    font-size: 16px;
+    color: var(--verde);
+    width: 60%;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 1px;
+    font-weight: bold;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.nombre-articulo {
+    font-size: 16px;
+    text-align: left;
+    color: var(--gris-oscuro);
+    padding-top: 15px;
+    display: none;
+}
+
+.card:hover .nombre-articulo {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-icon{
+    font-size: 2em;
+    color: #055bf0;
+    margin-bottom: 10px;
+}
+
+.footer-icon:hover {
+    color: var(--azul);
+}
+
+.copyright {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    width: 80%;
+    padding: 15px 0;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner {
+    background-image: url("../images/img-home-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+}
+
+.form-login > input, .form-login > button {
+    border: none;
+    padding: 10px;
+    margin-right: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.form-login button {
+    background-color: var(--celeste);
+    color: var(--gris-claro);
+    cursor: pointer;
+}
+
+.form-login button:hover {
+    background-color: #0022AA;
+}
+
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 20px;
-    background-color: #b1b1b1;
-  }
-  @media (min-width: 481px) {
-    .container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-top: 10px;
+}
+
+.formulario > input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.formulario > label {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-item {
+    background-color: var(--gris-claro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.form-item > label {
+    padding: 0 20px 0 20px;
+}
+
+.form-button {
+    background-color: var(--gris-claro);
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.form-button > button,input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+.form-button > button {
+    background-color: var(--verde);
+    color: var(--gris-claro);
+}
+
+.form-button > input {
+    background-color: var(--amarrillo);
+}
+
+@media (min-width: 720px) {
+    .fa-bars {
+        display: none;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .card {
-      width: 40%;
-      height: auto;
+        width: 40%;
     }
-    .card img {
-      width: 90%;
+
+    .menu-opciones {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
     }
-    .hamburguesa {
-      display: none;
+
+    .logo img {
+        width: 33%;
     }
-    .bottom {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
+    
+    .logo form {
+        width: 33%;
     }
-    .bottom ul {
-      display: flex;
-      margin: 10px;
+    
+    .logo p {
+        width: 33%;
     }
-    .bottom li {
-      font-size: 14px;
-      margin: 10px;
+
+    .menuHamburguesa {
+        display: none;
     }
-    .bottom i {
-      margin-left: 5px;
+
+    .form-login {
+        width: 75%;
     }
-  }
-  
-  @media (min-width: 769px) {
-    .logo {
-      max-width: 300px;
-      margin-right: 20px;
+
+    .formulario {
+        width: 50%;
     }
-    .top {
-      flex-wrap: nowrap;
+}
+
+@media (min-width: 1100px) {
+    .card{
+        width: 20%;
     }
-    .medium {
-      width: 30%;
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    .card {
-      max-width: 200px;
+
+    .footer-section {
+        width: 33%;
     }
-  }
+}
