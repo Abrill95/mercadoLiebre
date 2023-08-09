@@ -1,22 +1,230 @@
- * {
-   margin: 0;
-   padding: 0;
-}
-
-.colorfondoarriba {
-    background-color: #e9c925;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  :root {
+    --amarillo: #eac926;
+    --azul: #03264c;
+    --celeste: #1259c3;
+    --gris1: #666;
+    --gris2: #ebebeb;
+    --verde: #39b54a;
+  }
+  
+  nav {
+    background-color: var(--amarillo);
+    padding: 15px;
+  }
+  
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 45%;
+  }
+  .top form {
+    margin: 10px;
+    position: relative;
+    width: 45%;
+  }
+  .top input {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .top form button {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    border: none;
+    background-color: #fff;
+  }
+  
+  nav li {
+    list-style: none;
+  }
+  nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .fa-bars {
+    color: #fff;
+    font-size: 32px;
+    background-color: var(--celeste);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .hamburguesa {
+    text-align: center;
+    padding: 15px 0;
+  }
+  .medium {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+  .banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner img {
+    width: 100%;
+  }
+  main {
+    background-color: var(--gris2);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .detalle {
+    border-top: 1px solid var(--gris2);
+    padding: 15px 15px;
+    display: flex;
+  }
+  .titulo {
+    font-size: 24px;
+  }
+  .precios {
+    font-size: 18px;
+    width: 30%;
+  }
+  .descuentos,
+  .descripciones {
+    font-size: 16px;
+  }
+  
+  .descuentos {
+    color: var(--verde);
+    width: 70%;
+  }
+  .descripciones {
+    color: #666;
+  }
+  .camion {
+    position: relative;
+  }
+  
+  .fa-truck {
+    color: var(--verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+  }
+  
+  .card {
+    border: 1px solid #b1b1b1;
+    margin: 10px;
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+  }
+  .card img {
+    width: 90%;
+    padding: 15px;
+  }
+  .icon {
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .articulo-pie {
+    text-align: center;
+    color: #666;
+    padding: 15px 40px;
+  }
+  .articulo-pie p {
     font-size: 12px;
-}
-
-.item li a{
-color:#000;
-text-decoration: none;
-}
-
-.fondogris {
-    color:#666;
-}
+  }
+  
+  .articulo-pie h3 {
+    font-size: 14px;
+  }
+  .bottom {
+    display: none;
+  }
+  
+  .descripciones {
+    padding-bottom: 15px;
+  }
+  
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    background-color: #b1b1b1;
+  }
+  @media (min-width: 481px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card {
+      width: 40%;
+      height: auto;
+    }
+    .card img {
+      width: 90%;
+    }
+    .hamburguesa {
+      display: none;
+    }
+    .bottom {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    .bottom ul {
+      display: flex;
+      margin: 10px;
+    }
+    .bottom li {
+      font-size: 14px;
+      margin: 10px;
+    }
+    .bottom i {
+      margin-left: 5px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .logo {
+      max-width: 300px;
+      margin-right: 20px;
+    }
+    .top {
+      flex-wrap: nowrap;
+    }
+    .medium {
+      width: 30%;
+    }
+    .card {
+      max-width: 200px;
+    }
+  }
